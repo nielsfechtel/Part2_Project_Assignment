@@ -195,6 +195,11 @@ main {
     gap: 1.5rem;
     list-style: none;
 
+    img {
+      min-width: 30px;
+      max-width: 30px;
+    }
+
     li {
       display: flex;
       gap: 1rem;
