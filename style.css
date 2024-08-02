@@ -46,6 +46,10 @@ header {
     color: var(--color-primary-2);
   }
 
+  a.button {
+    color: var(--color-white-bg);
+  }
+
   .logo {
     display: flex;
     justify-content: center;
@@ -348,6 +352,8 @@ main {
 footer {
   border-top-left-radius: 12rem;
   background-color: var(--color-bg-body);
+
+  position: relative;
 }
 
 footer .contact-form {
@@ -411,6 +417,17 @@ footer .contact-form {
   }
 }
 
+footer .to-top-chevron,
+footer .to-top-chevron:visited {
+  position: absolute;
+  inset: 1rem 1.2rem auto auto;
+
+  text-decoration: none;
+  color: var(--color-primary-2);
+
+  height: 40px;
+}
+
 @media screen and (width > 620px) {
   header {
     flex-direction: row;
@@ -432,5 +449,11 @@ footer .contact-form {
       display: grid;
       grid-template-columns: 1fr 1fr;
     }
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
   }
 }
